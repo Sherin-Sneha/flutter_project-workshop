@@ -11,29 +11,30 @@ class _LoginPage extends State<LoginPage>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-          child: Column(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("Login Page"),
+      ),
+      body: Column(
         children: <Widget>[
-      Text("Username"),
-      TextFormField(
+          Text("Username"),
+          TextFormField(
 
-      ),
-      Text("Password"),
-      TextFormField(
+          ),
+          Text("Password"),
+          TextFormField(
 
+          ),
+          RaisedButton(
+            onPressed: null,
+            child: Text("Sign In"),
+          ),
+          RaisedButton(
+            onPressed: null,
+            child: Text("Sign Up"),
+          ),
+        ],
       ),
-      RaisedButton(
-        child: Text("Sign In"),
-        color: Colors.teal,
-        onPressed: null,
-      ),
-      RaisedButton(
-        child: Text("Sign Up"),
-        color: Colors.teal,
-      ),
-    ],  
-    ),
-    ),
     );
   }
 }
